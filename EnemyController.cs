@@ -39,11 +39,6 @@ namespace Platformer.Mechanics
                 var ev = Schedule<PlayerEnemyCollision>();
                 ev.player = player;
                 ev.enemy = this;
-
-                player.timeRemaining = 0;
-                Time.timeScale = 0f;
-                player.GameOver.SetActive(true);
-
             }
         }
 
