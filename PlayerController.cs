@@ -94,15 +94,12 @@ namespace Platformer.Mechanics
                 }
                 else
                 {
-
                     timeRemaining = 0;
                     timerIsRunning = false;
-                    
                     if(CoinCounterScript.instance.amount<300)
                     {
                         Time.timeScale = 0f;
                         GameOver.SetActive(true);
-
                     }
                     else
                     {
