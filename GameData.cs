@@ -9,7 +9,8 @@ public class GameData
    public int deathAmount;
 
    public GameData(string reason, int amount){
+      deathAmount = amount;
 	deathReason = reason;
-	deathAmount = amount;
+	
    }
 }
