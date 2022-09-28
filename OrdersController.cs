@@ -11,9 +11,9 @@ public class OrdersController : MonoBehaviour
     //绑定订单类
     public GameObject order;
     //同时最多存在的订单数
-    private int OrdersMaxNum = 4;
+    private int OrdersMaxNum = 3;
     //当前订单数
-    private int OrdersNum = 0;
+    private int OrdersNum = 1;
     //timer list
     List<float> Timers = new List<float>();
     //订单list
