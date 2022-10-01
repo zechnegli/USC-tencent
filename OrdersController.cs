@@ -154,7 +154,7 @@ public class OrdersController : MonoBehaviour
 
     Vector3 getOrderPosition(int num) 
     {
-        return new Vector3(-(float)1.8 + (float)num * (float)1 + (float) (num - 1.0) * (float)0.25, -(float)0.01, 0);
+        return new Vector3(-(float)2.0 + (float)num * (float)1 + (float) (num - 1.0) * (float)0.25, -(float)0.01, 0);
     }
 
 }
