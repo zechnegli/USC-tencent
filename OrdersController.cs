@@ -153,6 +153,7 @@ public class OrdersController : MonoBehaviour
 
     Vector3 getOrderPosition(int num) 
     {
+        // locate order obkect and generate menu object according to its location
         return new Vector3(-(float)1.8 + (float)num * (float)1 + (float) (num - 1.0) * (float)0.25, -(float)0.01, 0);
     }
 
