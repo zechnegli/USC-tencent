@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BreadScript : MonoBehaviour
 {
+//commment
 	public int breadNum = 2;
     private void OnTriggerEnter2D(Collider2D other)
    {
