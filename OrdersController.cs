@@ -127,18 +127,7 @@ public class OrdersController : MonoBehaviour
         }
         
     }
-
-
-    void getPoints(int num)
-    {
-        CoinCounterScript.instance.ChangeAmount(num);
-    }
-
-    void updateOrderIngredients(GameObject currentIngredients)
-    {
-        currentIngredients.GetComponent<MenuIngredientsController>().randomResetIngredients();
-    }
-
+    
     void displayNewOrder(int index)
     {
         if (index < orders.Count)
@@ -150,6 +139,16 @@ public class OrdersController : MonoBehaviour
             Timers[index] = (float)20.0;
         }
 
+    }
+
+    void updateOrderIngredients(GameObject currentIngredients)
+    {
+        currentIngredients.GetComponent<MenuIngredientsController>().randomResetIngredients();
+    }
+
+    void getPoints(int num)
+    {
+        CoinCounterScript.instance.ChangeAmount(num);
     }
 
     Vector3 getOrderPosition(int num) 
